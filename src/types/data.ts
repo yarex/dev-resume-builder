@@ -20,10 +20,17 @@ export interface Education {
 }
 
 export interface Experience {
-  title: string;
   company: string;
+  location: string;
+  roles: ExperienceRole[];
+}
+
+export interface ExperienceRole {
+  title: string;
   dates: string;
   description: string;
+  responsibilities: string[];
+  technologies: string[];
 }
 
 export interface Language {
