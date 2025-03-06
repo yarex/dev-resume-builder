@@ -10,6 +10,7 @@ export interface ResumeDataType {
   languages: Language[];
   experience: Experience[];
   education: Education[];
+  gdpr?: string;
 }
 
 export interface Education {

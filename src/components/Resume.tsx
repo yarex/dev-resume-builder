@@ -5,6 +5,7 @@ import SectionSkills from "./SectionSkills";
 import SectionExperience from "./SectionExperience";
 import SectionEducation from "./SectionEducation";
 import { ResumeDataType } from "@/types/data";
+import SectionGdpr from "./SectionGdpr";
 
 type ResumeProps = {
   data: ResumeDataType;
@@ -22,6 +23,8 @@ const Resume = ({ data }: ResumeProps) => {
       <SectionEducation education={data?.education} />
 
       <SectionLanguages languages={data?.languages} />
+
+      {data?.gdpr && <SectionGdpr gdpr={data?.gdpr} />}
     </>
   );
 };
