@@ -17,7 +17,14 @@ const SectionExperience = ({ experience }: SectionExperienceProps) => {
               {job.company}, {job.location}
             </h3>
             {job?.roles.map((role, j) => (
-              <div key={j}>
+              <div
+                key={j}
+                className={
+                  j < job?.roles.length - 1
+                    ? "mb-2 border-b-2 border-gray-300"
+                    : ""
+                }
+              >
                 <h3 className="text-lg font-medium">{role.title}</h3>
                 <p className="text-gray-600">{role.dates}</p>
                 {role.description && (
