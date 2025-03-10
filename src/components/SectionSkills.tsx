@@ -18,10 +18,10 @@ const SectionSkills = ({ skills }: SectionSkillsProps) => {
             key={skillGroup.category}
             className="shadow-lg rounded-lg p-5 bg-white"
           >
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">
               {skillGroup.category}
             </h3>
-            <ul className="text-gray-800 space-y-2">
+            <ul className="text-gray-800 text-sm space-y-2">
               {skillGroup.skills.map((skill) => (
                 <li
                   className="flex items-center justify-between"
@@ -32,7 +32,7 @@ const SectionSkills = ({ skills }: SectionSkillsProps) => {
                     {[...Array(4)].map((_, i) => (
                       <div
                         key={i}
-                        className={`w-4 h-4 rounded-full ${
+                        className={`w-3 h-3 rounded-full ${
                           i < skill.level ? "bg-blue-500" : "bg-gray-300"
                         }`}
                       ></div>

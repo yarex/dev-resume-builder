@@ -1,6 +1,6 @@
 const SkillsLegend = () => {
   return (
-    <div className="mb-6 flex flex-wrap space-x-4 text-sm text-gray-700">
+    <div className="mb-2 flex flex-wrap space-x-4 text-sm text-gray-700">
       {["Junior", "Mid", "Senior", "Expert"].map((level, index) => (
         <span key={index} className="flex items-center">
           {[...Array(index + 1)].map((_, i) => (

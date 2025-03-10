@@ -14,9 +14,12 @@ const SectionLanguages = ({ languages }: SectionLanguagesProps) => {
 
       <ul className="text-gray-800 space-y-2">
         {languages.map((lang) => (
-          <li key={lang.name} className="flex items-center justify-between">
-            <span className="flex items-center space-x-2">
-              <span className="text-lg gap-3">
+          <li
+            key={lang.name}
+            className="flex items-center justify-start gap-10"
+          >
+            <span className="flex items-center space-x-2 gap-2 min-w-[150px]">
+              <span className="text-lg">
                 {languageIcons[lang.name] || <FaGlobe />}
               </span>
               <span>{lang.name}</span>
