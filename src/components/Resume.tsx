@@ -25,6 +25,20 @@ const Resume = ({ data }: ResumeProps) => {
       <SectionLanguages languages={data?.languages} />
 
       {data?.gdpr && <SectionGdpr gdpr={data?.gdpr} />}
+
+      <style>
+        {`
+          @media print {
+            @page {
+              margin: 1in;
+            }
+            .print\\:break-inside-avoid {
+              break-inside: avoid;
+              page-break-inside: avoid;
+            }
+          }
+        `}
+      </style>
     </>
   );
 };

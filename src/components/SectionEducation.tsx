@@ -7,7 +7,7 @@ type SectionEducationProps = {
 
 const SectionEducation = ({ education }: SectionEducationProps) => {
   return (
-    <section className="mt-8">
+    <section className="mt-8 print:break-inside-avoid">
       <SectionHeader title="Education" />
 
       <div className="space-y-6">

@@ -9,7 +9,7 @@ type SectionLanguagesProps = {
 
 const SectionLanguages = ({ languages }: SectionLanguagesProps) => {
   return (
-    <section className="mt-8">
+    <section className="mt-8 print:break-inside-avoid">
       <SectionHeader title="Languages" />
 
       <ul className="text-gray-800 space-y-2">

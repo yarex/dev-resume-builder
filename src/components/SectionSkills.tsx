@@ -8,7 +8,7 @@ type SectionSkillsProps = {
 
 const SectionSkills = ({ skills }: SectionSkillsProps) => {
   return (
-    <section className="mt-8">
+    <section className="mt-4">
       <SectionHeader title="Skills" />
       <SkillsLegend />
 
