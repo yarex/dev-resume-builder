@@ -23,12 +23,12 @@ export interface Education {
 export interface Experience {
   company: string;
   location: string;
+  dates: string;
   roles: ExperienceRole[];
 }
 
 export interface ExperienceRole {
   title: string;
-  dates: string;
   description: string;
   responsibilities: string[];
   technologies: string[];

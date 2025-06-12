@@ -16,9 +16,12 @@ const SectionExperience = ({ experience }: SectionExperienceProps) => {
             key={index}
             className="p-4 border border-gray-300 rounded-md print:break-inside-avoid"
           >
-            <h3 className="text-xl font-medium">
+            <h3 className="text-xl font-bold">
               {job.company}, {job.location}
             </h3>
+            <p className="text-gray-600 pb-4 border-b-2 border-gray-300">
+              {job.dates}
+            </p>
             {job?.roles.map((role, j) => (
               <div
                 key={j}
@@ -29,7 +32,6 @@ const SectionExperience = ({ experience }: SectionExperienceProps) => {
                 }`}
               >
                 <h3 className="text-lg font-medium">{role.title}</h3>
-                <p className="text-gray-600">{role.dates}</p>
                 {role.description && (
                   <p className="text-gray-700 mt-2">{role.description}</p>
                 )}
